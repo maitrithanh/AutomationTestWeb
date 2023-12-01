@@ -1,0 +1,7 @@
+﻿@model List<DesignWeb_Project.Models.CartModel>
+<a href="/cart">
+    <div class="itemFixed cartFixed">
+        <i class="fa fa-shopping-basket" aria-hidden="true" style=" display: flex; justify-content: center; align-items: center; line-height: 50px;"></i> 
+        <span id="cartCount" class="cartItemCount">@Model.Sum(x => x.Quanlity)</span>
+    </div>
+</a>
